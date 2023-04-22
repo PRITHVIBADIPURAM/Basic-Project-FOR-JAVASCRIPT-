@@ -1,0 +1,66 @@
+*{
+ box-sizing: border-box;
+ text-decoration: none;
+
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0px;
+   list-style-type: none;
+   text-decoration: none;
+   transition: background 0.3s linear;
+}
+body.dark{
+    background-color:#292C35;
+}
+.lable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 50px;
+    height: 26px;
+    border-radius: 32px;
+    padding: 5px;
+    position: relative;
+   
+}
+ .fa-sun {
+     position: relative;
+    color: rgb(245, 167, 0);
+     
+
+}
+ .fa-moon {
+     position: relative;
+     color: rgba(255, 255, 255, 0.849);
+    
+
+
+}
+.ball{
+    width: 22px;
+    height: 22px ;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    position: absolute;
+    transition:  transform 0.3s linear;
+}
+.checkbox{
+    opacity:0;
+    position: absolute;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+.checkbox:checked + .lable .ball{
+
+    transform: translateX(24px);
+
+}

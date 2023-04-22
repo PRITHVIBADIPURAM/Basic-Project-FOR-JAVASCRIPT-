@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0vh;
+    padding: 0px;
+    background-color: beige;
+}
+.emojiclosed img{ 
+    display: flex;
+    height: 40vh;
+    width: 18vw;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+   margin-top: 20vh;
+  
+   
+
+}
+.emojiopen img{
+    display: flex;
+    height: 40vh;
+    width: 18vw;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 20vh;
+     cursor: pointer;
+    user-select: none;
+   
+}
+
+.emojiopen{
+  display: none;
+}
+.emojiclosed{
+  display: block;
+}
+.active {
+    display: block;
+}

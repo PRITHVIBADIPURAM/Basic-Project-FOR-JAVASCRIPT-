@@ -1,0 +1,72 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+overflow: hidden;
+}
+
+    
+.cloulds img {
+        height: 60vh;
+        width: 100vw;
+    }
+.road img{
+    position: absolute;
+    left: 1.5%;
+    width: 999vw;
+    height: 35vh;
+    padding-bottom: 30px;
+    animation: carmoving 6s linear infinite;
+    
+}
+.car img {
+    position: absolute;
+    height: 20vh;
+    width: 30vw;
+    left: 20%;
+    width: 30%;
+    top: 55vh;
+    animation: carshaking .5s linear infinite;
+}
+.wheelright img {
+    position: relative;
+    width: 7vw;
+    bottom: -1.5vh;
+    left: 45vh;
+    animation: wheelrotation .6s linear infinite;
+
+}
+.wheelleft img {
+    position: relative;
+    width: 6vw;
+    bottom: 12vh;
+    left: 85vh;
+    animation: wheelrotation .6s linear infinite;
+
+}
+
+@keyframes wheelrotation {
+100%{
+    transform: rotate(360deg);
+}
+    
+}
+@keyframes carmoving {
+    100%{
+        transform: translateX(-400vw);
+    }
+    
+}
+@keyframes carshaking{
+    0%{
+        transform: translate(-4px)
+    }
+    70%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(-4px);
+    }
+    
+}
